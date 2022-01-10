@@ -1,0 +1,236 @@
+/* Selectores de CSS */
+
+/* Etiqueta, utiliza el nombre de la etiqueta HTML, body, h1, img. */
+
+/* Clase. Primero es definir el selector .logotipo, puede ser aplicado a varios elementos dentro de la misma página.*/
+
+/* ID, o identificador único. #nav, numeral y el nombre del id*/
+
+/* Reset del documento */
+* {
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Aplicamos un color a todo el body del documento y la tipografía */
+body {
+    background-color: #f1e9db;
+    font-family: 'Roboto', Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Clase para mi logotipo */
+.logotipo {
+    width: 150px;
+    display: block;
+    float: left;
+}
+
+header {
+    /* Fijar la barra de navegación arriba */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:#07020D;
+    border-bottom: 5px solid #5DB7DE;
+}
+
+/* Estilos para mi barra de navegación */
+#nav {
+    height: 120px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Estilos para la lista que contiene mis links */
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+    overflow: hidden;
+
+    /* Aplicamos float al menu */
+    float: left;
+}
+/* Estilos para los elementos que están dentro de la lista */
+#nav ul li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Estilos para nuestros links */
+a {
+    text-decoration: none; /* quitar el subrayado */
+}
+/* Los links tienen 4 estados. Link en reposo, Hover (cuando pasamos con el cursor por encima), visited (link visitado), active (cuando hago click sobre el link) */
+
+/* reposo */
+#nav a:link {
+    color: white;
+    background-color: rgb(31, 185, 206);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* visitado */
+#nav a:visited {
+    color: white;
+}
+
+/* hover */
+#nav a:hover {
+    background-color: rgb(159, 236, 248);
+    color: rgb(15, 15, 15);
+}
+
+/* click sobre el link */
+#nav a:active {
+    background-color: rgb(159, 236, 248);
+    color: rgb(15, 15, 15);
+}
+
+
+/* Buscador */
+nav form {
+    width: 200px;
+    float: right;
+}
+
+nav input {
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+}
+
+.buscar {
+    width: 120px;
+}
+
+.buscar:focus {
+    border: 2px solid #5DB7DE;
+}
+
+.boton {
+    background-color: #5DB7DE;
+    color: black;
+    font-weight: 700;
+    border: 2px solid #5db7de00;
+}
+
+
+
+/* Estilo general para mis h1, titulares */
+h1 {
+    margin: 20px; /* top, bottom, right, left */
+    margin: 45px 60px 60px 45px; /* top, right, bottom, left*/
+    margin: 45px 60px; /* top y bottom, left y right */
+
+    text-align: center; /* Por defecto, esta propiedad tiene el valor left */
+    font-family: 'Roboto';
+    font-weight: 700; /* Grosor del trazo, bold */
+}
+
+/* Estilos para mis párrafos */
+p {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Estilos generales de mis secciones */
+section {
+    width: 75%;
+    background-color: gold;
+    margin: 0 auto; /* márgen superior y el inferior son 0, izquierdo y derecho son automáticos*/
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+/* Estilos generales de mis imágenes */
+img {
+    width: 100%;
+}
+
+/* Estilos para Bienvenida */
+
+#bienvenida {
+    margin-top: 140px;
+}
+
+/* Estilos para novedades */
+#novedades article {
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+#novedades article h2 {
+    font-size: 12px;
+    text-align: center;
+}
+
+#novedades article img:hover {
+    border: 5px solid rgb(10, 122, 173);
+    border-radius: 100%;
+}
+
+
+/* Float y mi catálogo */
+
+#catalogo article {
+    width: 250px;
+    background-color: rgb(230, 75, 14);
+    margin: 10px 10px 20px 10px;
+    float: left;
+}
+
+#catalogo h2 {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Formulario de contacto */
+
+
+
+/* botón de chat */
+.chat {
+    padding: 15px;
+    margin: 20px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.chat:hover {
+    background-color: aqua;
+}
+
+/* Ejemplo box sizing */
+#uno {
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #fff;
+}
+
+#dos {
+    background-color: rgb(21, 255, 0);
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #fff;
+}

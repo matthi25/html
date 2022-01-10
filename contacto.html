@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section id="contacto">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <label>
+                Nombre
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" >
+            </label>
+            <br>
+            <label>
+                Apellido
+                <input type="text" name="apellido" placeholder="Ingrese su apellido" >
+            </label>
+            <br>
+            <label>
+                Email
+                <input type="email" required>
+            </label>
+            <br>
+            <label>Ingrese su mensaje:<br>
+                <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+            </label>
+            <br>
+            <label>
+                ¿Desea recibir novedades por email?
+                <input type="radio" name="newsletter" value="Si" checked="checked">Si
+                <input type="radio" name="newsletter" value="No" >No
+            </label>
+            <br><br><br><br>
+            <label>
+                Acepto los términos y condiciones: 
+                <input type="checkbox" name="terminos" value="acepta" required> Si
+            </label>
+            <br>
+            <input class="submit" type="submit" value="Ingresar" name="submit">
+        </form>
+    </section>
+</body>
+</html>
