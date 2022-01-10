@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    
+    <!-- Instalación de la familia tipográfica usando G Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <section id="contacto">
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form id="form_contacto" action="" method="POST" enctype="multipart/form-data">
             <label>
                 Nombre
                 <input type="text" name="nombre" placeholder="Ingrese su nombre" >
@@ -31,13 +37,13 @@
             <br>
             <label>
                 ¿Desea recibir novedades por email?
-                <input type="radio" name="newsletter" value="Si" checked="checked">Si
-                <input type="radio" name="newsletter" value="No" >No
+                <input class="radio" type="radio" name="newsletter" value="Si" checked="checked">Si
+                <input class="radio" type="radio" name="newsletter" value="No" >No
             </label>
             <br><br><br><br>
             <label>
                 Acepto los términos y condiciones: 
-                <input type="checkbox" name="terminos" value="acepta" required> Si
+                <input class="check" type="checkbox" name="terminos" value="acepta" required> Si
             </label>
             <br>
             <input class="submit" type="submit" value="Ingresar" name="submit">
